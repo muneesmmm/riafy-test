@@ -1,8 +1,9 @@
 import React from 'react'
+import "./Style.css";
 function ProducCard(props) {
   return (
-    <div className=' mt-2'>
-        <div className="card" style={{borderRadius:'10px'}} >
+    <div className=' mt-2 '>
+        <div className="card d-flex align-items-stretch" data-aos="zoom-in" data-aos-duration="1000" style={{borderRadius:'10px'}} >
         <img className="card-img-top" style={{borderStartStartRadius:'10px',borderStartEndRadius:'10px'}} src={props.item.imageUrl} alt="imageurl"></img>
         <div className="card-body">
         <h5 className="card-title" size="0.85rem"  style={{fontWeight:700,color:'#30384d'}}>{props.item.Ingredient}</h5>

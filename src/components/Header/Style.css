@@ -67,3 +67,12 @@
 .navbar-mobile L:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #4154f1;
 }
+.card-title {
+  font-size: 0.85rem;
+}
+.card-text{
+  font-size: 0.7rem;
+}
+.title{
+  font-size: 1.2rem;
+}

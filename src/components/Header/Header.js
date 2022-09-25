@@ -9,41 +9,55 @@ import ProducCard from "./ProducCard";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Header() {
-    const [query, setQuery] = useState("");
-    useEffect(() => {
-      AOS.init();
-      AOS.refresh();
-    }, []);
-    let items = test;
+  const [query, setQuery] = useState("");
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+  let items = test;
   return (
-    <div className="container-fluid">
-    <nav className="navbar bg-white p-2 fixed-top">
-      <span className="navbar-brand" style={{fontWeight:700,fontFamily:"Montserrat"}}>
-        Search
-      </span>
-      <div style={{backgroundColor:"black",width:'100%',height:'2px'}}></div>
-      <input
-        type="search"
-        style={{width:'100%'}}
-        className="form-control mt-2"
-        aria-describedby="search"
-        placeholder="Food Name"
-        onChange={(e) => setQuery(e.target.value.toLowerCase())}
-      />
-    </nav>
-    
-    <div className="p-1 mt-5 bg-light">
-    
-      <div className="row  mt-5">
-      {items.filter((item)=>item.Ingredient.toLowerCase().includes(query)).map((item, index) => (
-          
+    <div>
+      <nav className="navbar bg-white p-2 fixed-top">
+        <span
+          className="navbar-brand"
+          style={{ fontWeight: 700, fontFamily: "Montserrat" }}
+        >
+          Search
+        </span>
+        <div
+          style={{ backgroundColor: "black", width: "100%", height: "2px" }}
+        ></div>
+        <input
+          type="search"
+          style={{ width: "100%" }}
+          className="form-control mt-2"
+          aria-describedby="search"
+          placeholder="Food Name"
+          onChange={(e) => setQuery(e.target.value.toLowerCase())}
+        />
+      </nav>
 
-          <div key={index} className="col-6 col-md-4 col-sm-6">
-            <ProducCard  item={item}  />
-          </div>
-      ))}
-    </div>
-    </div>
+      <div className="bg-light" style={{marginTop:'100px'}}>
+        <div className="mt-5 pt-3">
+          <header
+            className="title p-3"
+            style={{ fontWeight: 700, fontFamily: "Poppins" }}
+          >
+            Foods
+          </header>
+        </div>
+        <div className="container">
+        <div className="row  ">
+          {items
+            .filter((item) => item.Ingredient.toLowerCase().includes(query))
+            .map((item, index) => (
+              <div key={index} className="col-6 col-md-4 col-sm-6">
+                <ProducCard item={item} />
+              </div>
+            ))}
+        </div>
+        </div>
+      </div>
     </div>
   );
 }
