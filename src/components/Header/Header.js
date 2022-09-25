@@ -22,26 +22,23 @@ function Header() {
         Search
       </span>
       <div style={{backgroundColor:"black",width:'100%',height:'2px'}}></div>
-      <div className="p-2" style={{width:'100%'}}>
-      
-      </div>
       <input
         type="search"
         style={{width:'100%'}}
-        className="form-control"
+        className="form-control mt-2"
         aria-describedby="search"
         placeholder="Food Name"
         onChange={(e) => setQuery(e.target.value.toLowerCase())}
       />
     </nav>
     
-    <div className="p-3 mt-5">
+    <div className="p-1 mt-5">
     
       <div className="row  mt-5">
       {items.filter((item)=>item.Ingredient.toLowerCase().includes(query)).map((item, index) => (
           
 
-          <div key={index} className="col-6 col-md-4 col-sm-6 col-lg-3">
+          <div key={index} className="col-6 col-md-4 col-sm-6">
             <ProducCard  item={item}  />
           </div>
       ))}
