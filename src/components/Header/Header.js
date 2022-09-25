@@ -11,18 +11,12 @@ function Header() {
     AOS.refresh();
   }, []);
   return (
-    <nav class="navbar bg-white p-2 fixed-top">
+    <nav class="navbar bg-white p-2 ">
       <span class="navbar-brand" style={{fontWeight:700,fontFamily:"Montserrat"}}>
         Search
       </span>
       <div style={{backgroundColor:"black",width:'100%',height:'2px'}}></div>
-      <input
-        type="search"
-        class="form-control mt-2"
-        aria-describedby="search"
-        placeholder="Food Name"
-        size='0.8rem'
-      />
+      
     </nav>
   );
 }
