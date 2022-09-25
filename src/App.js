@@ -8,7 +8,6 @@ function App() {
     <div>
       <Router>
       <Route exact path="/">
-        <Header/>
       <Home/>
       </Route>
       </Router>

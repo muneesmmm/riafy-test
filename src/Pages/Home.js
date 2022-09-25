@@ -1,9 +1,11 @@
 import React from 'react';
-import Landing from '../components/LandingPage/Landingpage'
+import Header from '../components/Header/Header'
+
 function Home() {
     return (
         <div>
-            <Landing  />
+            <Header />
+
         </div>
     )
 }
