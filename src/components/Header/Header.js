@@ -32,7 +32,7 @@ function Header() {
       />
     </nav>
     
-    <div className="p-1 mt-5">
+    <div className="p-1 mt-5 bg-light">
     
       <div className="row  mt-5">
       {items.filter((item)=>item.Ingredient.toLowerCase().includes(query)).map((item, index) => (
