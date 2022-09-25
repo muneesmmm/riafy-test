@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/riafy-test/static/css/main.b4ea5dc5.css",
-    "main.js": "/riafy-test/static/js/main.c25c0bc3.js",
+    "main.css": "/riafy-test/static/css/main.35c577cd.css",
+    "main.js": "/riafy-test/static/js/main.6aca62f2.js",
     "static/js/787.28cb0dcd.chunk.js": "/riafy-test/static/js/787.28cb0dcd.chunk.js",
     "static/media/remixicon.svg?t=1590207869815": "/riafy-test/static/media/remixicon.9cedd2150922ead84869.svg",
     "static/media/remixicon.eot?t=1590207869815": "/riafy-test/static/media/remixicon.5cb99e6cba5a4619063f.eot",
@@ -11,12 +11,12 @@
     "static/media/remixicon.woff2?t=1590207869815": "/riafy-test/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
     "static/media/bootstrap-icons.woff2?": "/riafy-test/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
     "index.html": "/riafy-test/index.html",
-    "main.b4ea5dc5.css.map": "/riafy-test/static/css/main.b4ea5dc5.css.map",
-    "main.c25c0bc3.js.map": "/riafy-test/static/js/main.c25c0bc3.js.map",
+    "main.35c577cd.css.map": "/riafy-test/static/css/main.35c577cd.css.map",
+    "main.6aca62f2.js.map": "/riafy-test/static/js/main.6aca62f2.js.map",
     "787.28cb0dcd.chunk.js.map": "/riafy-test/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4ea5dc5.css",
-    "static/js/main.c25c0bc3.js"
+    "static/css/main.35c577cd.css",
+    "static/js/main.6aca62f2.js"
   ]
 }
