@@ -1,0 +1,38 @@
+
+/* loading dots */
+
+.loading:after {
+    content: ' .';
+    animation: dots 1s steps(10, end) infinite;}
+  
+  @keyframes dots {
+    0%, 20% {
+      color: rgba(255, 255, 255, 0);
+      text-shadow:
+        .25em 0 0 rgba(255, 245, 245, 0),
+        .5em 0 0 rgba(209, 139, 139, 0);}
+    40% {
+      color: white;
+      text-shadow:
+        .25em 0 0 rgba(238, 4, 4, 0),
+        .5em 0 0 rgba(151, 46, 46, 0);}
+    60% {
+      text-shadow:
+        .25em 0 0 rgb(99, 84, 84),
+        .5em 0 0 rgba(0,0,0,0);}
+    80%, 100% {
+      text-shadow:
+        .25em 0 0 rgb(168, 168, 168),
+        .5em 0 0 rgb(14, 11, 11);}}
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #7e8a9a;
+          opacity: 1; /* Firefox */
+        }
+        
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color: #7e8a9a;
+        }
+        
+        ::-ms-input-placeholder { /* Microsoft Edge */
+          color: #7e8a9a;
+        }
